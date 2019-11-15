@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'FontAwesome';
+  /* src: url("https://mall.gree.com/assets/fonts/glyphicons/fontawesome-webfont.ttf?v=4.2.0") format('truetype'); */
+  src: url("../iconfont/fontawesome-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="fa-"],
+[class*="fa-"] {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#content {
+  width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.po_re {
+  position: relative;
+}
+
+.po_ab {
+  position: absolute;
+}
+
+.over_ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.font_20 {
+  font-size: 20px;
+}
+
+.text_style {
+  word-break: break-all;
+  white-space: normal;
+  text-indent: 0;
+}
+
+.mid_f_left {
+  width: 90px;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  text-align: right;
+}
+
+.mid_f_right {
+  width: 370px;
+  float: left;
+  min-height: 26px;
+  line-height: 26px;
+  display: inline-block;
+}
+
+.star-on,
+.star-off,
+.star-half,
+.heart-on,
+.heart-off,
+.heart-half {
+  margin-left: 2px;
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+/* 图标 */
+/* 收藏 */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* 下标箭头 */
+.fa-angle-down::before {
+  content: "\f107";
+}
+
+/* 右侧箭头 */
+.fa-angle-right::before {
+  content: "\f105";
+}
+
+/* 左侧箭头 */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* 客服中心 */
+.fa-headphones::before {
+  content: "\f025";
+}
+
+/* 搜索 */
+.fa-search::before {
+  content: "\f002";
+}
+
+/* 竖线图标 */
+.shutiao {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* all-select所有商品 */
+.fa-list-ul:before {
+  content: "\f0ca";
+}

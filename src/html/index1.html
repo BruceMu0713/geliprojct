@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/resetpc.css">
+    <link rel="stylesheet" href="../sass/index2.css">
+    <link rel="stylesheet" href="../sass/_public.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/require.js" data-main="../js/mainindex"></script>
+
+</head>
+
+<body>
+    <!--  头部-->
+    <div class="header_top" id="header_top">
+
+        <div class="headertop-inner">
+            <!-- 登录 注册-->
+            <div class="header-l" style="margin-left: 50px">
+                <span id="usermenu" class=""><a href="javascript:;">登录</a><i class="shutiao">|</i><a href="javascript:;">注册</a><i class="shutiao">|</i>
+                    <span style="position:relative;"><a href="javascript:;">移动端下载</a></span>
+                </span>
+            </div>
+
+            <div class="header-r">
+                <ul class="nav_list">
+                    <li>
+                        <a href="javascript:;">商城首页</a>
+                        <i class="shutiao">|</i>
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="myOrder"><span>我的订单</span><i class="shutiao">|</i></a>
+                    </li>
+                    <li>
+                        <a>
+                            <span id="openShopId"><a href="/user/login">开店申请</a><i class="shutiao">|</i><a href="/distribute/register/initRegister" class="mar_l10">注册分销商</a><i class="shutiao">|</i></span>
+                        </a>
+                    </li>
+                    <li><a href="javascript:;" class="alink_collect"><i class="demo-icons fa-star font_82"></i><span>我的收藏</span></a>
+
+                        <i class="shutiao">|</i>
+                    </li>
+                    <li><a href="#"><i class="fa-headphones" aria-hidden="true" style="margin-right: 3px"></i><span>客服中心</span></a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- 头部搜索框 -->
+    <div id="header">
+        <div class="left_img">
+            <div id="logo-container">
+                <a href="javascript:;">
+
+                    <img id="logo" src="../img/logo.gif" title="董明珠商城">
+                </a>
+            </div>
+        </div>
+
+        <div class="mid_search" style="width: 740px">
+            <!--(输入框和搜索按钮)-->
+            <div class="search" id="head_search" style="display:inline-block;width: 564px;float: left;;">
+                <div class="big_class">
+                    <span id="search_select" class="pointer">商品<input type="hidden" id="type" value="product"><i class="demo-icons fa-angle-down font_14 font_c7" style="margin-left: 10px"></i></span>
+
+                </div>
+                <div style="height: 38px;line-height: 30px;">
+                    <input autocomplete="off" name="keyword" id="keyword_searchForm" type="text" class="search_input" value="" placeholder="请输入要搜索的信息" readonly="" onfocus="this.removeAttribute('readonly');">
+                </div>
+                <button type="button" class="button_search wid_80 po_ab pa_01 pointer js_search" style="outline: none;cursor:pointer;">
+                                        <i class="fa-search" style="font-size: 19px;color: #fff;"></i>
+                                </button>
+            </div>
+            <img src="../img/headicon.png" style="margin-left: 30px; height: 40px;margin-top: 26px">
+            <!--search po_re end (输入框和搜索按钮)-->
+            <!--（中间搜索框下的标签）-->
+            <div class="Tag"><a href="#"><span class="mall_word">冰箱</span></a><a href="#"><span class="mall_word">滚筒洗衣机</span></a><a href="#"><span class="mall_word">格力三代手机</span></a><a href="#"><span class="mall_word">金贝</span></a></div>
+            <!--Tag（中间搜索框下的标签） end-->
+
+        </div>
+        <!--mid_search (包着中间搜索的框)end-->
+
+        <div class="right_img">
+            <div class="button" id="shop_car">
+                <span class="icon_chart">
+                    <img src="../img/cart_empty.png" style="width: 26px;height: 24px;margin-top: -5px">
+                   
+                </span>
+                <a class="like_shop" onclick="window.open('/shopCart/toCart')">购物车 （<span id="cartQuantity">0</span>）</a>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 导航菜单 -->
+    <div class="navmenu">
+
+        <div class="Nav">
+            <div class="Nav_l">
+                <h2 class="all_select">
+                    <a href="/categoryes">
+                        <i class="demo-icons fa-list-ul" style="margin-right: 17px"></i> 全部商品分类
+                    </a>
+                </h2>
+                <!-- 二级导航渲染 -->
+                <div class="Nav_classify" style="display: block;">
+                    <ul>
+                        <li class="" id="classify1">
+                            <span class="classify_list" style="overflow: hidden;">
+                                           <h3 class="po_re" style="background: url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/static/img/mall/CategoryIcon-03.png') no-repeat;background-size: 20px;background-position: 6px center;">
+                                               <a href="javascript:;" title="冰箱" target="_blank">冰箱</a>
+                                           </h3>
+                                           <i class="demo-icons fa-angle-right"></i>
+                                      </span>
+                        </li>
+                        <div class="classify_list1" pref="1" style="display: none;">
+                            <div class="nav_sub1" style="height: auto;">
+                                <dl>
+                                    <dt><a href="/goods/search/searchItemByCategory/956" target="_blank">晶弘冰箱</a> <i class="fa-angle-right" style="font-size: 18px; margin-left: 9px"></i></dt>
+                                    <dd>
+                                        <b><a href="/goods/search/searchItemByCategory/957" target="_blank">双门</a></b>
+                                        <b><a href="/goods/search/searchItemByCategory/958" target="_blank">三门</a></b>
+                                        <b><a href="/goods/search/searchItemByCategory/959" target="_blank">多门</a></b>
+                                        <b><a href="/goods/search/searchItemByCategory/960" target="_blank">对开</a></b>
+                                        <b><a href="/goods/search/searchItemByCategory/961" target="_blank">冰柜</a></b>
+                                    </dd>
+
+                                </dl>
+                                <dl>
+                                    <dt><a href="/goods/search/searchItemByCategory/962" target="_blank">酒柜</a> <i class="fa-angle-right" style="font-size: 18px; margin-left: 9px"></i></dt>
+                                    <dd>
+                                        <b><a href="/goods/search/searchItemByCategory/963" target="_blank">酒柜</a></b>
+                                    </dd>
+
+                                </dl>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧导航条 -->
+            <div class="menu_mid">
+                <ul>
+                    <li><a href="javascript:;">精品冰洗</a></li>
+                    <li><a href="javascript:;">健康家电</a></li>
+                    <li><a href="javascript:;">当季优选</a></li>
+                    <li><a href="javascript:;">精品生活电器</a></li>
+                    <li><a href="javascript:;">精品空调</a></li>
+                    <li><a href="javascript:;">恒温空调</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="slider" id="slider">
+        <div class="slider-inner">
+            <div class="item">
+                <img class="img" style="background: url(../img/lunbo1.jpg);">
+            </div>
+            <div class="item">
+                <img class="img" style="background: url(../img/lunbo2.jpg);">
+            </div>
+            <div class="item">
+                <img class="img" style="background: url(../img/lunbo3.jpg);">
+            </div>
+            <div class="item">
+                <img class="img" style="background: url(../img/lunbo4.jpg);">
+            </div>
+            <div class="item">
+                <img class="img" style="background: url(../img/lunbo5.jpg);">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <!-- 热销推荐 -->
+        <div id="guessLove">
+            <!--获取oss和ftp切换的状态值-->
+
+            <p class="title-font">
+                热销推荐
+            </p>
+            <div class="rx">
+                <!-- 存放标题-->
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <!-- <li>
+                              <a href="javascript:;" title="">
+                                  <img src="">
+                              </a>
+                            </li> -->
+
+                </ul>
+            </div>
+        </div>
+        <!-- 每日精选 -->
+        <div class="title-font">每日精选</div>
+        <div class="mrjx">
+            <div class="mrjx1">
+
+            </div>
+            <div class="mrjx2">
+                <div class="top1">
+
+                </div>
+                <div class="bottom1">
+
+                </div>
+                <div class="bottom2">
+
+                </div>
+            </div>
+            <div class="mrjx3">
+                <div class="top1">
+
+                </div>
+                <div class="bottom1">
+
+                </div>
+            </div>
+        </div>
+        <!-- 楼层开始 -->
+        <div class="floors" class="wid">
+
+            <div class="floor1">
+                <div class="Floor_product">
+                    <!-- 楼梯标题 -->
+                    <div class="floor_nav">
+                        <div class="floor">
+                            <b style="background: #f90002">1F</b>
+                            <a name="冰箱/洗衣机" style="color: rgb()">
+                                <span style="color:#757575">冰箱/洗衣机</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="Floor_left">
+                        <!-- floor end-->
+                        <!--楼层左侧活动产品 -->
+                        <div class="catalogueList" style="position: relative">
+                            <!-- 分类开始-->
+                            <a href="javascript:;">
+                                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/25/28412974-e339-485f-8295-b048b36a90e7.jpg" alt="">
+                            </a>
+
+                            <!--catalogueList end -->
+                        </div>
+                    </div>
+                    <div class="Floor_right">
+
+                        <div class="FloorList">
+                            <ul id="floorId193">
+                                <li style="width:348px;height:567px;margin-right: 11px;">
+                                    <a class="cursor" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="" width="348" height="567">
+                                    </a>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                            WiFi智能控制，贴心又省心
+                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                    ￥3499.00
+                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                   三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                    WiFi智能控制，贴心又省心
+                                                </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                            ￥3499.00
+                                                                                    </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                       三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                    </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                        WiFi智能控制，贴心又省心
+                                                    </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                ￥3499.00
+                                                                                        </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                            WiFi智能控制，贴心又省心
+                                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                    ￥3499.00
+                                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="floor2">
+                <div class="Floor_product">
+                    <!-- 楼梯标题 -->
+                    <div class="floor_nav">
+                        <div class="floor">
+                            <b style="background: #f90002">1F</b>
+                            <a name="冰箱/洗衣机" style="color: rgb()">
+                                <span style="color:#757575">冰箱/洗衣机</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="Floor_left">
+                        <!-- floor end-->
+                        <!--楼层左侧活动产品 -->
+                        <div class="catalogueList" style="position: relative">
+                            <!-- 分类开始-->
+                            <a href="javascript:;">
+                                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/25/28412974-e339-485f-8295-b048b36a90e7.jpg" alt="">
+                            </a>
+
+                            <!--catalogueList end -->
+                        </div>
+                    </div>
+                    <div class="Floor_right">
+
+                        <div class="FloorList">
+                            <ul id="floorId193">
+                                <li style="width:348px;height:567px;margin-right: 11px;">
+                                    <a class="cursor" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="" width="348" height="567">
+                                    </a>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                            WiFi智能控制，贴心又省心
+                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                    ￥3499.00
+                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                   三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                    WiFi智能控制，贴心又省心
+                                                </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                            ￥3499.00
+                                                                                    </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                       三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                    </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                        WiFi智能控制，贴心又省心
+                                                    </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                ￥3499.00
+                                                                                        </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                            WiFi智能控制，贴心又省心
+                                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                    ￥3499.00
+                                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="floor3">
+                <div class="Floor_product">
+                    <!-- 楼梯标题 -->
+                    <div class="floor_nav">
+                        <div class="floor">
+                            <b style="background: #f90002">1F</b>
+                            <a name="冰箱/洗衣机" style="color: rgb()">
+                                <span style="color:#757575">冰箱/洗衣机</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="Floor_left">
+                        <!-- floor end-->
+                        <!--楼层左侧活动产品 -->
+                        <div class="catalogueList" style="position: relative">
+                            <!-- 分类开始-->
+                            <a href="javascript:;">
+                                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/25/28412974-e339-485f-8295-b048b36a90e7.jpg" alt="">
+                            </a>
+
+                            <!--catalogueList end -->
+                        </div>
+                    </div>
+                    <div class="Floor_right">
+
+                        <div class="FloorList">
+                            <ul id="floorId193">
+                                <li style="width:348px;height:567px;margin-right: 11px;">
+                                    <a class="cursor" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="" width="348" height="567">
+                                    </a>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                            WiFi智能控制，贴心又省心
+                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                    ￥3499.00
+                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                   三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                    WiFi智能控制，贴心又省心
+                                                </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                            ￥3499.00
+                                                                                    </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                       三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                    </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                        WiFi智能控制，贴心又省心
+                                                    </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                ￥3499.00
+                                                                                        </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                            WiFi智能控制，贴心又省心
+                                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                    ￥3499.00
+                                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="floor4">
+                <div class="Floor_product">
+                    <!-- 楼梯标题 -->
+                    <div class="floor_nav">
+                        <div class="floor">
+                            <b style="background: #f90002">1F</b>
+                            <a name="冰箱/洗衣机" style="color: rgb()">
+                                <span style="color:#757575">冰箱/洗衣机</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="Floor_left">
+                        <!-- floor end-->
+                        <!--楼层左侧活动产品 -->
+                        <div class="catalogueList" style="position: relative">
+                            <!-- 分类开始-->
+                            <a href="javascript:;">
+                                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/25/28412974-e339-485f-8295-b048b36a90e7.jpg" alt="">
+                            </a>
+
+                            <!--catalogueList end -->
+                        </div>
+                    </div>
+                    <div class="Floor_right">
+
+                        <div class="FloorList">
+                            <ul id="floorId193">
+                                <li style="width:348px;height:567px;margin-right: 11px;">
+                                    <a class="cursor" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="" width="348" height="567">
+                                    </a>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                            WiFi智能控制，贴心又省心
+                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                    ￥3499.00
+                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                   三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                    WiFi智能控制，贴心又省心
+                                                </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                            ￥3499.00
+                                                                                    </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                       三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                    </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                        WiFi智能控制，贴心又省心
+                                                    </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                ￥3499.00
+                                                                                        </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                            WiFi智能控制，贴心又省心
+                                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                    ￥3499.00
+                                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="floor5">
+                <div class="Floor_product">
+                    <!-- 楼梯标题 -->
+                    <div class="floor_nav">
+                        <div class="floor">
+                            <b style="background: #f90002">1F</b>
+                            <a name="冰箱/洗衣机" style="color: rgb()">
+                                <span style="color:#757575">冰箱/洗衣机</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="Floor_left">
+                        <!-- floor end-->
+                        <!--楼层左侧活动产品 -->
+                        <div class="catalogueList" style="position: relative">
+                            <!-- 分类开始-->
+                            <a href="javascript:;">
+                                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/25/28412974-e339-485f-8295-b048b36a90e7.jpg" alt="">
+                            </a>
+
+                            <!--catalogueList end -->
+                        </div>
+                    </div>
+                    <div class="Floor_right">
+
+                        <div class="FloorList">
+                            <ul id="floorId193">
+                                <li style="width:348px;height:567px;margin-right: 11px;">
+                                    <a class="cursor" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="" width="348" height="567">
+                                    </a>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                            WiFi智能控制，贴心又省心
+                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                    ￥3499.00
+                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                   三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                    WiFi智能控制，贴心又省心
+                                                </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                            ￥3499.00
+                                                                                    </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                       三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                    </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                        WiFi智能控制，贴心又省心
+                                                    </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                ￥3499.00
+                                                                                        </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                            WiFi智能控制，贴心又省心
+                                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                    ￥3499.00
+                                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="floor6">
+                <div class="Floor_product">
+                    <!-- 楼梯标题 -->
+                    <div class="floor_nav">
+                        <div class="floor">
+                            <b style="background: #f90002">1F</b>
+                            <a name="冰箱/洗衣机" style="color: rgb()">
+                                <span style="color:#757575">冰箱/洗衣机</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="Floor_left">
+                        <!-- floor end-->
+                        <!--楼层左侧活动产品 -->
+                        <div class="catalogueList" style="position: relative">
+                            <!-- 分类开始-->
+                            <a href="javascript:;">
+                                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/25/28412974-e339-485f-8295-b048b36a90e7.jpg" alt="">
+                            </a>
+
+                            <!--catalogueList end -->
+                        </div>
+                    </div>
+                    <div class="Floor_right">
+
+                        <div class="FloorList">
+                            <ul id="floorId193">
+                                <li style="width:348px;height:567px;margin-right: 11px;">
+                                    <a class="cursor" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="" width="348" height="567">
+                                    </a>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                            WiFi智能控制，贴心又省心
+                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                    ￥3499.00
+                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                   三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                    WiFi智能控制，贴心又省心
+                                                </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                            ￥3499.00
+                                                                                    </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                       三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                    </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                        WiFi智能控制，贴心又省心
+                                                    </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                ￥3499.00
+                                                                                        </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                                           三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                                        </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                            WiFi智能控制，贴心又省心
+                                                        </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                                    ￥3499.00
+                                                                                            </label>
+                                </li>
+                                <li style="background-color: #fff;margin: 0 10px 8px 0;position: relative;" class="item">
+
+                                    <!--商品图片 -->
+                                    <a class="cursor" style="display: block;padding: 5px" title="" target="_blank">
+                                        <!--转换-->
+                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/8/26/69c2f386-65a1-4a9c-8dec-74a4e1969311.jpg" width="190" height="190">
+                                    </a>
+                                    <a class="cursor over_ell" style="color: #3e3a39;font-size: 14px; width: 100%;height: 17px;display: block;overflow: hidden;margin-top: 6px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;" title="三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金">
+                                               三门冰箱 270L 智能变频 风冷无霜 BCD-270WIPTGL/浮光金
+                                            </a>
+                                    <a class="cursor over_ell" id="productAd1000051646" style="color: #979797;font-size: 12px; width: 100%;height:14px;display: block;overflow: hidden;margin-top: 2px;  word-break: break-all;text-align: center;max-width: 200px;box-sizing: border-box;padding: 0 10px;"
+                                        title="WiFi智能控制，贴心又省心">
+                                                WiFi智能控制，贴心又省心
+                                            </a>
+
+                                    <label class="over_ell price_font" style="color: #FF4D4F;font-size:14px;cursor:pointer;display:block;text-align:center;margin-top:10px;width: 100%;max-width: 200px;box-sizing: border-box;padding: 0 13px;">
+                                                                                        ￥3499.00
+                                                                                </label>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 楼层导航功能条 -->
+        <div id="leftBar" style="top: 455.5px; display: block;">
+            <div class="">
+                <a href="#" class="border-5" code="1"> <span class="floor_s">1F</span> <span class="floor_h">冰箱/洗衣机</span>
+                </a>
+            </div>
+            <div class="">
+                <a href="#" class="border-5" code="2"> <span class="floor_s">2F</span> <span class="floor_h">空气能热水器</span>
+                </a>
+            </div>
+            <div class="">
+                <a href="#" class="border-5" code="3"> <span class="floor_s">3F</span> <span class="floor_h">厨房电器</span>
+                </a>
+            </div>
+            <div class="">
+                <a href="#" class="border-5" code="4"> <span class="floor_s">4F</span> <span class="floor_h">生活电器</span>
+                </a>
+            </div>
+            <div class="">
+                <a href="#" class="border-5" code="5"> <span class="floor_s">5F</span> <span class="floor_h">格力手机</span>
+                </a>
+            </div>
+            <div class="current">
+                <a href="#" class="border-5" code="6"> <span class="floor_s">6F</span> <span class="floor_h">家用空调</span>
+                </a>
+            </div>
+        </div>
+        <!-- foot-one -->
+        <div id="foot_top">
+            <!--底部信誉介绍开始-->
+            <div class="foot_nav">
+                <img src="../img/boss.png" id="reputation" width="1200px">
+                <ul style="margin-top: 26px;overflow: hidden;padding: 40px 0; background-color: #fff;">
+
+                    <li>
+                        <a class="cursor" target="_blank" title="正品保证" style="width: 100%;">
+                            <img src="../img/zheng.png" border="0" style="width: 100%;">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cursor" target="_blank" title="七天退货" style="width: 100%;">
+                            <img src="../img/qi.png" border="0" style="width: 100%;">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cursor" target="_blank" title="送货到家" style="width: 100%;">
+                            <img src="../img/song.png" border="0" style="width: 100%;">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cursor" target="_blank" title="售后无忧" style="width: 100%;">
+                            <img src="../img/shou.png" border="0" style="width: 100%;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer -->
+    </div>
+    <div id="foot">
+
+        <ul id="document">
+
+
+            <li>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="javascript:;">格力境外购买须知</a></dd>
+
+                    <dd><a href="javascript:;">免责声明</a></dd>
+
+
+
+                    <dd><a href="javascript:;">购物流程</a></dd>
+
+
+
+                    <dd><a href="javascript:;">密码管理</a></dd>
+
+
+
+                    <dd><a href="javascript:;">注册/登录</a></dd>
+
+
+
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="javascript:;">商城退换货扣运费标准</a></dd>
+
+                    <dd><a href="javascript:;">服务时效</a></dd>
+
+
+
+                    <dd><a href="javascript:;">安装/维修</a></dd>
+
+
+
+                    <dd><a href="javascript:;">退换货说明</a></dd>
+
+
+
+                    <dd><a href="javascript:;">售后服务政策</a></dd>
+
+
+
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt>常见问题</dt>
+                    <dd><a href="javascript:;">订单常见问题说明</a></dd>
+
+                    <dd><a href="javascript:;">空调常见问题说明</a></dd>
+
+
+
+                    <dd><a href="javascript:;">冰箱常见问题说明</a></dd>
+
+
+
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt>服务查询</dt>
+                    <dd><a href="javascript:;">配送服务查询</a></dd>
+
+                </dl>
+            </li>
+
+            <li>
+                <dl>
+                    <dt>商城支付</dt>
+                    <dd><a href="javascript:;">商城支付</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div style="width: 1200px;margin: 0 auto;background-color: #fff; padding: 66px 0 30px 21px;box-sizing: border-box">
+            <div style="color: #b2b2b2;">珠海格力电器股份有限公司版权所有 粤ICP备05006515号</div>
+            <img src="../img/yinlian.png">
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
