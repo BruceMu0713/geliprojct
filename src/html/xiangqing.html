@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/resetpc.css">
+    <link rel="stylesheet" href="../sass/publichead.min.css">
     <link rel="stylesheet" href="../sass/xiangqing.css">
 </head>
 
 <body>
+    <div class="header_top"></div>
     <div id="content" class="prodetail">
         <div class="shophz">
             <div class="shopmainhz">
@@ -143,11 +145,13 @@
                                     <div class="mid_f_left">支付：</div>
                                     <!-- 如果是询价的商品，市场价就展示为空 -->
                                     <div class="mid_f_right">
-                                        <div class="icon_png2 fl mar_t2"></div>
+                                        <div class="cardpay">
+
+                                        </div>
                                         <!--icon_png end -->
-                                        <div class="fl wid_60">立即支付</div>
+                                        <div style="width: 60px;float: left;">立即支付</div>
                                         <!--立即支付 end -->
-                                        <input type="hidden" value="0" id="payType">
+
                                     </div>
                                     <!--mid_f_right end -->
                                 </li>
@@ -194,7 +198,7 @@
                                 </li>
                                 <li class="logoLi">
                                     <a href="javascript:;">
-                                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/12/a642e6f9-a1d5-4e0d-b8f9-fb97ccfcb7c1.jpg" alt="">
+                                        <img src="../img/qijiandian.jpg" alt="">
                                     </a>
                                 </li>
                                 <li class="left">店铺名称：</li>
@@ -215,9 +219,9 @@
 
                                     <!-- 进入店铺  二级域名 -->
 
-                                    <a href="javascript:;" class="font_65">进入卖家店铺</a>
+                                    <a href="javascript:;" class="pushshop">进入卖家店铺</a>
 
-                                    <a href="javascript:;" class="js_favourite_shop  font_65 mar_l10"><i class="demo-icons font_14 fa-star"></i>收藏店铺</a>
+                                    <a href="javascript:;" class="shoucangshop"><i class="fa-star"></i>收藏店铺</a>
                                 </li>
                             </ul>
                         </div>
@@ -227,6 +231,12 @@
         </div>
 
     </div>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script>
+        $(function() {
+            $('.header_top').load('./publichead.html')
+        })
+    </script>
 </body>
 
 </html>

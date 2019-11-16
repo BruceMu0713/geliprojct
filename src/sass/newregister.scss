@@ -1,0 +1,163 @@
+@charset "utf-8"; // 插入盒子公共样式
+@import "_public";
+@import "logreshead";
+// 主盒子
+.nTab {
+    width: 980px;
+    margin: 10px auto;
+    height: auto;
+    overflow: hidden;
+    // 标题
+    .TabTitle {
+        clear: both;
+        height: 45px;
+        line-height: 45px;
+        overflow: hidden;
+        background: #fafafa;
+        ul {
+            width: 300px;
+            margin: 0;
+            padding: 3px 0px 0px 0px;
+            overflow: hidden;
+            li {
+                float: left;
+                width: 140px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                cursor: pointer;
+                padding-bottom: 7px;
+            }
+        }
+    }
+}
+
+.nTab .TabTitle .active {
+    background-color: #FFF;
+    border: 1px solid #e8e8e8;
+    border-top: 2px solid #2daae4;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2daae4;
+}
+
+.nTab .TabTitle .normal {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+// 主体盒子
+.nTab .TabContent {
+    min-height: 500px;
+    overflow: hidden;
+    text-align: left;
+    background: #fff;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: -1px;
+    border: 1px #e8e8e8 solid;
+}
+
+// 内容盒子
+.register_box_2 {
+    width: 750px;
+    min-height: 200px;
+    float: left;
+    margin: 30px 10px;
+    ul {
+        padding: 0px;
+        margin: auto;
+        li {
+            margin: 0;
+            height: 50px;
+            padding-top: 9px;
+            height: 60px;
+            line-height: 34px;
+        }
+    }
+}
+
+// 手机
+.register_box_2 li {
+    .regist_font {
+        width: 170px;
+        height: 35px;
+        line-height: 35px;
+        text-align: right;
+        float: left;
+        padding-right: 10px;
+    }
+    .regist_item_ifo {
+        position: relative;
+        min-width: 280px;
+        max-width: 650px;
+        float: left;
+    }
+}
+
+.input_Style1 {
+    font-family: Microsoft Yahei;
+    color: #474747;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.wid_260 {
+    width: 260px;
+}
+
+.fa-mobile-phone:before,
+.fa-mobile:before {
+    content: "\f10b";
+}
+
+.register_box_2 .register-icon {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    color: #c7c7c7;
+}
+
+// 验证码盒子
+#yzmbtn {
+    background: #d3d3d3;
+    color: #fff;
+    padding: 0px 15px;
+    width: auto;
+    text-align: center;
+    border: none;
+    font-family: Microsoft Yahei;
+    margin-left: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+}
+
+// 同意并注册
+#personalBtn {
+    margin: 30px auto 0px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 25px;
+    background: #cc0000;
+    text-align: center;
+    border: none;
+    font-family: Microsoft Yahei;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}

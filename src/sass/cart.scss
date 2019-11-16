@@ -1,0 +1,302 @@
+                                @charset "utf-8";
+                                @import "_public";
+                                // 右侧购物状态图
+                                .shopping {
+                                    background-position: 0px 0px;
+                                    width: 482px;
+                                    height: 48px;
+                                    margin: 40px 0px 0px auto;
+                                    float: right;
+                                    background-image: url(../img/shoppingtree.jpg);
+                                    background-repeat: no-repeat;
+                                }
+                                
+                                // 购物车信息主盒子
+                                .wid {
+                                    width: 1200px;
+                                    margin: auto;
+                                    overflow: hidden;
+                                }
+                                
+                                // 我的购物车
+                                .my_shop {
+                                    float: left;
+                                    width: 100%;
+                                    margin-top: 10px;
+                                    margin-bottom: 5px !important;
+                                    h1 {
+                                        float: left;
+                                        font-size: 18px;
+                                        font-family: "微软雅黑", "宋体";
+                                        text-align: left;
+                                        height: 25px;
+                                        line-height: 25px;
+                                        span {
+                                            float: left;
+                                            width: 34px;
+                                            height: 30px;
+                                            display: block;
+                                            margin-right: 5px;
+                                            background: url(../img/basic_icon.png) 0px 0px;
+                                        }
+                                    }
+                                }
+                                
+                                // 主体样式
+                                .list_main {
+                                    width: 100%;
+                                    .list_top {
+                                        width: 100%;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        background: #cc0000;
+                                        margin: 10px auto;
+                                        ul {
+                                            color: #fff;
+                                            li {
+                                                float: left;
+                                                text-align: center;
+                                                color: #fff;
+                                                font-size: 14px;
+                                                font-weight: bold;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .list_top .shop_name {
+                                    width: 500px;
+                                    text-align: left!important;
+                                    text-indent: 30px;
+                                }
+                                
+                                .wid_180 {
+                                    width: 180px;
+                                }
+                                
+                                .wid_150 {
+                                    width: 150px;
+                                }
+                                
+                                .wid_95 {
+                                    width: 95px;
+                                }
+                                
+                                .wid_120 {
+                                    width: 120px;
+                                }
+                                
+                                // 购物车盒子隐藏与展现
+                                .mainshopbox {
+                                    position: relative;
+                                    width: 1200px;
+                                    margin: 10px auto;
+                                    border: 1px solid #e8e8e8;
+                                    h4 {
+                                        text-align: left;
+                                        height: 24px;
+                                        line-height: 24px;
+                                        float: left;
+                                        font-size: 12px;
+                                        margin-top: 10px;
+                                        margin-left: 20px;
+                                        margin-bottom: 10px;
+                                        span {
+                                            float: left;
+                                        }
+                                    }
+                                }
+                                
+                                // 主体内容
+                                .content_list {
+                                    width: 1190px;
+                                    padding: 0 0 10px;
+                                    margin: auto;
+                                    .man1_con {
+                                        width: 1158px;
+                                        margin: 0 auto;
+                                        min-height: 110px;
+                                        background-color: #fafafa;
+                                        border-top: 1px solid #e8e8e8;
+                                        ul li {
+                                            float: left;
+                                        }
+                                    }
+                                }
+                                
+                                .pad_t20 {
+                                    padding-top: 20px;
+                                }
+                                
+                                .man1_con .man1_pro {
+                                    width: 66px;
+                                    margin-left: 30px;
+                                    img {
+                                        width: 64px;
+                                        height: 64px;
+                                        border: 1px solid #fff;
+                                    }
+                                }
+                                
+                                // 商品详情
+                                .man1_con .man1_n {
+                                    margin-left: 10px;
+                                    line-height: 20px;
+                                    width: 350px;
+                                    overflow: hidden;
+                                }
+                                
+                                .man1_con .man1_name {
+                                    width: 100%;
+                                    text-align: left;
+                                    line-height: 16px;
+                                    margin-bottom: 10px;
+                                }
+                                
+                                // 单价
+                                .man1_con .man1_p_m {
+                                    width: 150px;
+                                    float: left;
+                                    margin-left: 10px;
+                                    text-align: center;
+                                }
+                                
+                                // 数量
+                                .man1_con .man1_p_m {
+                                    width: 150px;
+                                    float: left;
+                                    margin-left: 10px;
+                                    text-align: center;
+                                }
+                                
+                                .min-quantity {
+                                    border: 1px solid #ece9e9;
+                                    height: 28px;
+                                    line-height: 28px;
+                                    width: 28px;
+                                    text-align: center;
+                                    color: #666;
+                                    margin: 0;
+                                    padding: 0 2px;
+                                    background: #fff;
+                                    outline: none;
+                                }
+                                
+                                .fl {
+                                    float: left;
+                                }
+                                
+                                .disabled {
+                                    color: #efefef;
+                                }
+                                
+                                .p-quantity {
+                                    border: 1px solid #ece9e9;
+                                    height: 26px;
+                                    line-height: 26px;
+                                    width: 38px;
+                                    text-align: center;
+                                    color: #666;
+                                    margin: 0;
+                                    padding: 0 2px;
+                                    background: #fff;
+                                    outline: none;
+                                }
+                                
+                                .man1_con .man1_p_m .stock_box {
+                                    text-align: center;
+                                    text-indent: 0;
+                                }
+                                
+                                .stock_box {
+                                    min-height: 30px;
+                                    line-height: 20px;
+                                    width: 98px;
+                                    margin-top: 35px;
+                                    text-align: left;
+                                    text-indent: 5px;
+                                }
+                                
+                                // 合计
+                                .man1_con .man1_p_m {
+                                    width: 150px;
+                                    float: left;
+                                    margin-left: 10px;
+                                    text-align: center;
+                                    strong {
+                                        font-weight: bold;
+                                    }
+                                }
+                                
+                                // 操作(删除）
+                                .man1_con .main1_del {
+                                    width: 60px;
+                                    display: block;
+                                    text-align: center;
+                                    margin-left: 30px;
+                                    position: relative;
+                                }
+                                
+                                // 结算盒子
+                                .jiesuan {
+                                    bottom: 0px;
+                                    margin: auto;
+                                    margin-top: 20px;
+                                    .shop_set {
+                                        width: 1201px;
+                                        border: 1px solid #e8e8e8;
+                                        background-color: #e8e8e8;
+                                        min-height: 45px;
+                                        clear: both;
+                                        .set_right {
+                                            float: right;
+                                            text-align: right;
+                                        }
+                                        .set_left {
+                                            float: left;
+                                            width: 300px;
+                                            margin-top: 12px;
+                                            margin-left: 20px;
+                                            p {
+                                                float: left;
+                                                width: 600px;
+                                                text-align: left;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .shopnum {
+                                    margin-right: 10px;
+                                    margin-top: 8px;
+                                    float: left;
+                                    strong {
+                                        font-size: 18px;
+                                        color: #E50011;
+                                        font-weight: bold;
+                                    }
+                                }
+                                
+                                #btnDisBlock {
+                                    float: right;
+                                    button {
+                                        width: auto;
+                                        padding: 0px 25px;
+                                        background: #cc0000;
+                                        text-align: center;
+                                        border: none;
+                                        font-family: Microsoft Yahei;
+                                        color: #fff;
+                                        border-radius: 2px;
+                                        cursor: pointer;
+                                        height: 45px;
+                                        line-height: 45px;
+                                        font-size: 18px;
+                                        i {
+                                            font-style: normal;
+                                            margin-left: 5px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }

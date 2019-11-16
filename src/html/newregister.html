@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/resetpc.css">
+    <link rel="stylesheet" href="../sass/newregister.min.css">
+</head>
+
+<body>
+    <!-- 上方公共盒子 -->
+    <div style="background: #fafafa;">
+        <div id="header">
+            <div class="left_img">
+                <a href="../html/index1.html">
+                    <img src="../img/logo.gif" alt="董明珠商城" id="logo_left">
+                </a>
+            </div>
+            <div class="right_img" style="float:left">
+                <p><i>|</i>欢迎注册</p>
+            </div>
+        </div>
+    </div>
+    <div class="w">
+        <div class="nTab">
+            <div class="TabTitle">
+                <ul id="myTab0">
+                    <li class="active">用户注册</li>
+
+                    <li class="normal">邮箱注册</li>
+                </ul>
+            </div>
+            <div class="TabContent">
+                <form method="post" class="personalForm">
+                    <div id="mytabcon">
+                        <div class="register_box_2">
+                            <ul>
+                                <!-- 手机 -->
+                                <li>
+                                    <span class="regist_font"><i class="font_fe">*</i>手机：</span>
+                                    <div class="regist_item_ifo">
+                                        <input id="personalPhoneInput" name="personalPhoneInput" type="text" class="input_Style1 wid_260" placeholder="请输入手机" maxlength="11">
+                                        <span class="register-icon fa-mobile font_c7" style="font-size:24px;"></span>
+                                    </div>
+
+
+                                </li>
+                                <!-- 请设置密码 -->
+                                <li class="pr">
+                                    <span class="regist_font"><i class="font_fe">*</i>请设置密码：</span>
+                                    <div class="regist_item_ifo">
+                                        <input id="firstPersonalPassword" name="firstPersonalPassword" type="password" class="input_Style1 wid_260" placeholder="请输入密码" maxlength="20" onkeyup="value=value.replace(/\s/g,'')" onfocus="$(this).checkPwdIn()">
+                                        <span class="register-icon fa-lock font_c7"></span>
+                                        <div class="password_length" style="margin-top: 5px;">
+                                            <span id="pwd_level_1" class="bg_08 font_12" style="display:none">弱</span>
+                                            <!--密码长度为短就用第一个span -->
+                                            <span id="pwd_level_2" class="bg_09 font_12" style="display:none">中</span>
+                                            <!--密码长度为中就用到第一个和第二个span -->
+                                            <span id="pwd_level_3" class="bg_11 font_12" style="display:none">强</span>
+                                            <!--密码长度为高就用到第一个和第二个和第三个span -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 请确认密码 -->
+                                <li>
+                                    <span class="regist_font"><i class="font_fe">*</i>请确认密码：</span>
+                                    <div class="regist_item_ifo">
+                                        <input id="secondPersonalPassword" name="secondPersonalPassword" type="password" class="input_Style1 wid_260" onkeyup="value=value.replace(/\s/g,'')" placeholder="请再次输入密码" maxlength="20">
+                                        <span class="register-icon fa-lock font_c7"></span>
+                                    </div>
+                                    <!-- <div id="secondPersonalPasswordDiv1" class="regist_text bg_05 border-1 none pass_two">请再次输入密码</div>
+                                    <div id="secondPersonalPasswordDiv2" class="regist_text bg_05 border-1 none font_fe ">
+                                        <i class="fa-exclamation-circle font_16 demo-icons"></i>两次输入密码不一致
+                                    </div> -->
+                                </li>
+
+                                <!-- 手机验证码 -->
+                                <li>
+                                    <span class="regist_font"><i class="font_fe">*</i>手机验证码：</span>
+                                    <div class="regist_item_ifo">
+
+                                        <input id="personalPhoneCaptchaInput" name="personalPhoneCaptchaInput" type="text" class="input_Style1 wid_130 fl" placeholder="请输入手机验证码" maxlength="6" style="float: left;">
+                                        <!--<button id="sendPersonalPhoneCaptchaButton" type="button" onclick="sendCaptcha('personalPhoneCaptchaKey','sendPersonalPhoneCaptchaButton','personalPhoneInput',1,2,0)" class="fl button_4 hei_35 mar_l10">获取短信验证码</button>-->
+                                        <button id="yzmbtn" type="button" onclick="isSendCaptcha('personalPhoneInput','p_regiter')" class="fl button_4 hei_35 mar_l10">获取短信验证码</button>
+                                    </div>
+
+                                </li>
+
+                                <li class="mar_t10">
+                                    <p style="margin-left:175px;">
+                                        <input id="personal" name="personal" type="checkbox" value="111" checked="checked">
+                                        <a href="#" onclick="$('#mallAgreement').attr('style','');">同意《格力官方商城用户注册协议》和《隐私声明》</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <button id="personalBtn" class="button_1 hei_40" style="width:260px; margin-left:180px;" loadmsg="正在提交..." type="button">同意协议并注册</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

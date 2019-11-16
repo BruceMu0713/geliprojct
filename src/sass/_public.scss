@@ -78,6 +78,27 @@
     background-repeat: no-repeat;
 }
 
+#header {
+    width: 1200px;
+    height: 110px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+// logn公共样式
+.left_img {
+    width: 210px;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    #logo_left {
+        max-width: 174px;
+        height: auto;
+        border: none;
+        outline: none;
+    }
+}
+
 
 /* 图标 */
 
@@ -86,6 +107,14 @@
 
 .fa-star:before {
     content: "\f005";
+}
+
+// 人民币
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+    content: "\f157";
 }
 
 
@@ -129,6 +158,16 @@
 .shutiao {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+// 用户图标
+.fa-user:before {
+    content: "\f007";
+}
+
+// 密码锁图标
+.fa-lock:before {
+    content: "\f023";
 }
 
 

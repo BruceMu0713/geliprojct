@@ -12,7 +12,8 @@ body {
 
 html,
 body {
-    width: 100%
+    width: 100%;
+    background: #fafafa;
 }
 
 html,
