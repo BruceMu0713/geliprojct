@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/resetpc.css">
+    <link rel="stylesheet" href="../sass/_public.min.css">
     <link rel="stylesheet" href="../sass/publichead.min.css">
+    <link rel="stylesheet" href="../sass/headersearch.min.css">
+    <link rel="stylesheet" href="../sass/navmenu.min.css">
+    <link rel="stylesheet" href="../sass/foot.min.css">
     <link rel="stylesheet" href="../sass/xiangqing.css">
 </head>
 
 <body>
     <div class="header_top"></div>
+    <div id="header"></div>
+    <div class="navmenu"></div>
     <div id="content" class="prodetail">
         <div class="shophz">
             <div class="shopmainhz">
@@ -231,10 +237,15 @@
         </div>
 
     </div>
+    <div id="foot"></div>
     <script src="../js/jquery-1.11.3.js"></script>
     <script>
         $(function() {
-            $('.header_top').load('./publichead.html')
+            $('.header_top').load('./publichead.html');
+            $('#header').load('./headersearch.html');
+            $('.navmenu').load('./navmenu.html');
+            $('#foot').load('./foot.html');
+
         })
     </script>
 </body>

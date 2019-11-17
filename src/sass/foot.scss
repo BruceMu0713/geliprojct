@@ -1,0 +1,37 @@
+@charset "utf-8";
+// 底部下面盒子
+#foot {
+    width: 100%;
+    ul {
+        width: 960px;
+        margin: 0px auto;
+        background: #fff;
+        border-top: 1px solid #e2e2e2;
+        overflow: hidden;
+        padding-top: 37px;
+        li {
+            width: 135px;
+            float: left;
+            line-height: 26px;
+            dt {
+                height: 35px;
+                line-height: 35px;
+                font-family: Microsoft Yahei, Arial;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            dd {
+                width: 150px;
+                margin: auto;
+                color: #525252;
+                a {
+                    color: #b2b2b2;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .document {
+        padding: 37px 90px 0 150px;
+    }
+}

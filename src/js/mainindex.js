@@ -2,7 +2,9 @@ require.config({
     paths: { // 模块和路径
         jquery: "./jquery-1.11.3",
         // md5:"./jquery.md5",
-        lunbo: "./lunbo"
+        lunbo: "./lunbo",
+        index: "./index"
+
     },
     // 依赖环境
     shim: {
@@ -10,9 +12,7 @@ require.config({
     }
 });
 
-require(['jquery', 'lunbo'], function($, lunbo) {
-    $('#slider').Slider()
+require(['jquery', 'lunbo', 'index'], function($, lunbo, index) {
+    $('#slider').Slider();
+    index.render();
 });
-// require(['jquery', 'reg'], function($, reg) {
-//     reg.regEv('.reg');
-// })
