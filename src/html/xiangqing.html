@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="../sass/navmenu.min.css">
     <link rel="stylesheet" href="../sass/foot.min.css">
     <link rel="stylesheet" href="../sass/xiangqing.css">
+
 </head>
 
 <body>
     <div class="header_top"></div>
+    <div class="clear_fix"></div>
     <div id="header"></div>
+
     <div class="navmenu"></div>
     <div id="content" class="prodetail">
         <div class="shophz">
@@ -33,7 +36,8 @@
                 </div>
                 <div class="left_pic">
                     <div class="bigImg">
-                        <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/3/20/07ac8760-3779-4996-b05e-f2933910c68d.jpg" alt="" id="midimg">
+                        <img src="" alt="" id="midimg">
+                        <!-- 小图 -->
                         <div class="smallview" style="left:0px;top:188px;display: none;"></div>
 
                     </div>
@@ -43,11 +47,7 @@
                         </div>
                         <div class="imgmenu">
                             <ul>
-                                <li><img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/3/20/07ac8760-3779-4996-b05e-f2933910c68d.jpg" alt=""></li>
-                                <li><img src="" alt=""></li>
-                                <li><img src="" alt=""></li>
-                                <li><img src="" alt=""></li>
-                                <li><img src="" alt=""></li>
+
                             </ul>
                         </div>
 
@@ -55,24 +55,22 @@
                             <i class="fa-angle-right font_20"></i>
                         </div>
                     </div>
-                    <div class="bigview" style="width:472.362px;height:422.111px;top:80px;left:430px;display:none;"></div>
+                    <!-- 大图 -->
+                    <div class="bigview" style="width:472.362px;height:422.111px;top:80px;left:430px;display:none;">
+                        <img src="" alt="" id="bpic"></div>
                 </div>
                 <!-- 右侧商品信息 -->
                 <div class="mid po_re">
                     <!-- 商品标题信息 -->
                     <div class="mid_title">
-                        <h1 class="fl cursor" title="多门冰箱 变频325L风冷无霜 -5℃瞬冻科技 BCD-325WPQC 摩卡金色" style="font-size:18px;width:450px;margin-left:30px;line-height: 1.5em">多门冰箱 变频325L风冷无霜 -5℃瞬冻科技 BCD-325WPQC 摩卡金色 &nbsp; </h1>
-                        <div id="isGoods1" title="-5℃瞬冻黑科技，定格美味留住新鲜，保持食材口感和营养；肉类无需解冻，一刀切开，节约时间轻松烹饪；在家也能轻松自制冰沙，美味清爽如此简单">
-                            <p class="describe" style="width: 450px;">-5℃瞬冻黑科技，定格美味留住新鲜，保持食材口感和营养；肉类无需解冻，一刀切开，节约时间轻松烹饪；在家也能轻松自制冰沙，美味清爽如此简单</p>
 
-                        </div>
                     </div>
                     <!-- 购买信息 -->
                     <div class="mid_font1">
                         <ul>
                             <li>
                                 <p class="mid_f_left">售价：</p>
-                                <div class="mid_f_right"><span style="color: #cc0000;">￥123.00</span></div>
+                                <div class="mid_f_right"><span style="color: #cc0000;" class="disprice"></span></div>
                             </li>
                             <li>
                                 <div class="mid_f_left">促销信息：</div>
@@ -239,6 +237,7 @@
     </div>
     <div id="foot"></div>
     <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/require.js" data-main="../js/mainxiangqing"></script>
     <script>
         $(function() {
             $('.header_top').load('./publichead.html');

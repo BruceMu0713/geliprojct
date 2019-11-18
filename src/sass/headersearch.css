@@ -161,8 +161,7 @@
   height: 110px;
   width: 1200px;
   margin: 0 auto;
-  /* background: #f5f5f5; */
-  background: chartreuse;
+  background: #f5f5f5;
   transition: all 0.2;
 }
 

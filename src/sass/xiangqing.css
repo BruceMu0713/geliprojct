@@ -79,10 +79,38 @@
   background-repeat: no-repeat;
 }
 
+#header {
+  width: 1200px;
+  height: 110px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.left_img {
+  width: 210px;
+  float: left;
+  position: relative;
+  margin-top: 10px;
+}
+
+.left_img #logo_left {
+  max-width: 174px;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
 /* 图标 */
 /* 收藏 */
 .fa-star:before {
   content: "\f005";
+}
+
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
 }
 
 /* 下标箭头 */
@@ -114,6 +142,14 @@
 .shutiao {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.fa-user:before {
+  content: "\f007";
+}
+
+.fa-lock:before {
+  content: "\f023";
 }
 
 /* all-select所有商品 */
@@ -392,7 +428,6 @@
 
 .wrap-input {
   position: relative;
-  width: 73px;
   height: 23px;
   line-height: 23px;
   padding: 2px 20px;
