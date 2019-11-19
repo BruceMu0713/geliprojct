@@ -1,7 +1,7 @@
 let baseUrl = "http://10.31.154.122/1909dierjieduan/geliproject";
-define(['jquery', 'fangdajing'], function($, a) {
+define(['jquery', 'magnifier', 'cookie'], function($, magnifier, cookie) {
     return {
-        render: function() {
+        render: function(callback) {
             let id = location.search.split('=')[1];
             $.ajax({
                 url: `${baseUrl}/src/php/lib/getitem.php`,
@@ -11,11 +11,12 @@ define(['jquery', 'fangdajing'], function($, a) {
                 },
                 dataType: 'json',
                 success: function(res) {
-                    console.log(res);
+
+
 
                     let picnews = JSON.parse(res.pic);
                     let sampiclist = res.urls.split(',')
-                    console.log(sampiclist);
+
 
                     let pictitle = `
                    
@@ -42,22 +43,62 @@ define(['jquery', 'fangdajing'], function($, a) {
                             src: sampiclist[0]
 
                         });
-                        a.magnifier();
+
+
+                        magnifier.magnifier()
+
                     });
+
+
+                    callback && callback(res.id, res.price, res.title);
 
                 }
             })
 
             $('.imgmenu ul').on('click', 'li', function() {
                 $('#midimg').attr({
-                    src: $(this).find('img').attr(
-                        'src'
-                    )
+                    src: $(this).find('img').attr('src')
+
                 });
-                console.log($(this).find('img').attr('src'));
-            })
+                console.log($('#bpic'));
+
+                $('#bpic').attr({
+                    src: $(this).find('img').attr('src')
+
+                });
+
+            });
 
 
+        },
+        additem: function(id, price, title, num) {
+            let shop = cookie.get('shop');
+            let product = {
+                id: id,
+                price: price,
+                title: title,
+                num: num
+            };
+            if (shop) {
+                shop = JSON.parse(shop);
+                if (shop.some(elm => elm.id == id)) {
+                    shop.forEach(elm => {
+                        elm.id == id ? elm.num = num : null
+                    });
+
+
+                } else {
+                    shop.push(product)
+                }
+
+            } else {
+                shop = [];
+                shop.push(product);
+
+
+            }
+
+            cookie.set('shop', JSON.stringify(shop), 10)
         }
     }
 });

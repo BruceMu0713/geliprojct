@@ -128,9 +128,17 @@
 
 .left_pic .bigview {
     position: absolute;
+    top: 80px;
+    left: 430px;
     border: 1px solid #959595;
     overflow: hidden;
     z-index: 999;
+}
+
+#bpic {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 // 右侧盒子
