@@ -94,6 +94,23 @@ define(['jquery'], function($) {
                     $('.mrjx3').append(rightstr);
                 }
             })
+        },
+        login1: function() {
+            const morenhz = document.querySelector('#morenhz');
+            const dengluhz = document.querySelector('#dengluhz');
+            const exit = document.querySelector('.tcbtn')
+            if (localStorage.getItem('yhm')) {
+                morenhz.style.display = 'none';
+                dengluhz.style.display = 'block';
+                document.querySelector('.yhmhz').innerHTML = localStorage.getItem('yhm');
+
+            };
+            exit.onclick = function() {
+                morenhz.style.display = 'block';
+                dengluhz.style.display = 'none';
+                localStorage.removeItem('yhm')
+            }
+
         }
     }
 });

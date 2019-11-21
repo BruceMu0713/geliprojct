@@ -116,16 +116,16 @@ define(['jquery'], function() {
                 });
             });
             // ======商品数量=====
-            var $plus = $('#adbtn'),
-                $reduce = $('#rebtn'),
+            var $plus = $('.adbtn'),
+                $reduce = $('.rebtn'),
                 $all_sum = $('.p-quantity');
             $plus.click(function() {
                 var $inputVal = $(this).prev('input'),
                     $count = parseInt($inputVal.val()) + 1,
-                    $obj = $(this).parents('.amount_box').find('#rebtn'),
+                    $obj = $(this).parents('.amount_box').find('.rebtn'),
                     $priceTotalObj = $(this).parents('.listBox').find('.danjia'),
                     $price = $(this).parents('.listBox').find('.danjia1').html(), //单价
-                    $priceTotal = $count * parseInt($price.substring(1));
+                    $priceTotal = $count * parseInt($price.trim().substring(1));
                 $inputVal.val($count);
                 $priceTotalObj.html('￥' + $priceTotal);
                 if ($inputVal.val() > 1 && $obj.hasClass('reSty')) {
@@ -133,6 +133,67 @@ define(['jquery'], function() {
                 }
                 totalMoney();
             });
+            $reduce.click(function() {
+                var $inputVal = $(this).next('input'),
+                    $count = parseInt($inputVal.val()) - 1,
+                    $priceTotalObj = $(this).parents('.listBox').find('.danjia'),
+                    $price = $(this).parents('.listBox').find('.danjia1').html(), //单价
+                    $priceTotal = $count * parseInt($price.trim().substring(1));
+                if ($inputVal.val() > 1) {
+                    $inputVal.val($count);
+                    $priceTotalObj.html('￥' + $priceTotal);
+                }
+                if ($inputVal.val() == 1 && !$(this).hasClass('reSty')) {
+                    $(this).addClass('reSty');
+                }
+                totalMoney();
+            });
+            $all_sum.keyup(function() {
+                    var $count = 0,
+                        $priceTotalObj = $(this).parents('.listBox').find('.danjia'),
+                        $price = $(this).parents('.listBox').find('.danjia1').html(), //单价
+                        $priceTotal = 0;
+                    if ($(this).val() == '') {
+                        $(this).val('1');
+                    }
+                    $(this).val($(this).val().replace(/\D|^0/g, ''));
+                    $count = $(this).val();
+                    $priceTotal = $count * parseInt($price.trim().substring(1));
+                    $(this).attr('value', $count);
+                    $priceTotalObj.html('￥' + $priceTotal);
+                    totalMoney();
+                })
+                // 删除框====
+            var $order_lists = null;
+            var $order_content = '';
+            $('.delBtn').click(function() {
+                $order_lists = $(this).parents('.listBox');
+                $order_content = $order_lists.parents('.man1_con');
+                $('.model_bg').fadeIn(300);
+                $('.my_model').fadeIn(300);
+            });
+            //关闭模态框
+            $('.closeModel').click(function() {
+                closeM();
+            });
+            $('.dialog-close').click(function() {
+                closeM();
+            });
+            //确定按钮，移除商品
+            $('.dialog-sure').click(function() {
+                $order_lists.remove();
+                if ($order_content.html().trim() == null || $order_content.html().trim().length == 0) {
+                    $order_content.parents('.mainshopbox').remove();
+                }
+                closeM();
+                $sonCheckBox = $('.probtn');
+                totalMoney();
+            })
+
+            function closeM() {
+                $('.model_bg').fadeOut(300);
+                $('.my_model').fadeOut(300);
+            }
 
             function totalMoney() {
                 var total_money = 0;
@@ -141,12 +202,11 @@ define(['jquery'], function() {
                 $sonCheckBox.each(function() {
                     if ($(this).is(':checked')) {
                         console.log($(this).parents('.listBox').find('.danjia').html());
-                        var goods = parseInt($(this).parents('.listBox').find('.danjia').html().substring(1));
+                        var goods = parseInt($(this).parents('.listBox').find('.danjia').html().trim().substring(1));
                         var num = parseInt($(this).parents('.listBox').find('.p-quantity').val());
                         total_money += goods;
                         total_count += num;
-                        console.log(total_money);
-                        console.log(total_count);
+
                     }
                 });
 

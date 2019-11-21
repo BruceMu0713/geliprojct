@@ -68,9 +68,9 @@ define(['jquery', 'cookie', 'carts'], function($, cookie, carts) {
                                     <li class="man1_p_m" style="width:120px;">
                                         <div class="amount_box">
     
-                                            <button style="cursor: pointer" class="fl min-quantity" type="button" id="rebtn">-</button>
+                                            <button style="cursor: pointer" class="fl min-quantity rebtn" type="button">-</button>
                                             <input class="fl p-quantity " name="quantity" type="text" value="${arr[0].num}" autocomplete="off">
-                                            <button style="cursor: pointer" class="maxquantity fl min-quantity " type="button" id="adbtn">+</button>
+                                            <button style="cursor: pointer" class="maxquantity fl min-quantity adbtn" type="button">+</button>
                                         </div>
     
                                         <div class="stock_box">
@@ -81,7 +81,7 @@ define(['jquery', 'cookie', 'carts'], function($, cookie, carts) {
                                         <strong class="danjia">¥${(elm.price*arr[0].num).toFixed(2)}</strong>
                                     </li>
                                     <li class="main1_del" style="width: 100px;">
-                                        <a href="javascript:;">【删除】</a>
+                                        <a href="javascript:;" class="delBtn">【删除】</a>
     
                                     </li>
                                 </ul>

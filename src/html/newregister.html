@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/resetpc.css">
     <link rel="stylesheet" href="../sass/newregister.min.css">
+    <script src="../js/require.js" data-main="../js/mainnewregister"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                 </ul>
             </div>
             <div class="TabContent">
-                <form method="post" class="personalForm">
+                <form method="POST" class="personalForm" action="http://10.31.154.122/1909dierjieduan/geliproject/src/php/lib/registry.php">
                     <div id="mytabcon">
                         <div class="register_box_2">
                             <ul>
@@ -45,14 +46,14 @@
                                         <input id="personalPhoneInput" name="personalPhoneInput" type="text" class="input_Style1 wid_260" placeholder="请输入手机" maxlength="11">
                                         <span class="register-icon fa-mobile font_c7" style="font-size:24px;"></span>
                                     </div>
-
+                                    <span class="yzts" style="position: absolute;left:770px;top: 220px;"></span>
 
                                 </li>
                                 <!-- 请设置密码 -->
                                 <li class="pr">
                                     <span class="regist_font"><i class="font_fe">*</i>请设置密码：</span>
                                     <div class="regist_item_ifo">
-                                        <input id="firstPersonalPassword" name="firstPersonalPassword" type="password" class="input_Style1 wid_260" placeholder="请输入密码" maxlength="20" onkeyup="value=value.replace(/\s/g,'')" onfocus="$(this).checkPwdIn()">
+                                        <input id="firstPersonalPassword" name="firstPersonalPassword" type="password" class="input_Style1 wid_260" placeholder="请输入密码" maxlength="20" onkeyup="value=value.replace(/\s/g,'')">
                                         <span class="register-icon fa-lock font_c7"></span>
                                         <div class="password_length" style="margin-top: 5px;">
                                             <span id="pwd_level_1" class="bg_08 font_12" style="display:none">弱</span>
@@ -96,7 +97,8 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <button id="personalBtn" class="button_1 hei_40" style="width:260px; margin-left:180px;" loadmsg="正在提交..." type="button">同意协议并注册</button>
+                                    <!-- <button id="personalBtn" class="button_1 hei_40" style="width:260px; margin-left:180px;" loadmsg="正在提交..." type="button">同意协议并注册</button> -->
+                                    <input type="submit" name="submit" value="同意协议并注册" id="personalBtn" class="button_1 hei_40" style="width:260px; margin-left:180px;">
                                 </li>
                             </ul>
                         </div>

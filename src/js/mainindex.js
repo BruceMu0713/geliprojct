@@ -15,4 +15,5 @@ require.config({
 require(['jquery', 'lunbo', 'index'], function($, lunbo, index) {
     $('#slider').Slider();
     index.render();
+    index.login1()
 });
