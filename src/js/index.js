@@ -111,6 +111,7 @@ define(['jquery'], function($) {
                 localStorage.removeItem('yhm')
             }
 
-        }
+        },
+
     }
 });

@@ -7,5 +7,7 @@ require.config({
     }
 });
 require(['jquery', 'cart', 'carts'], function($, cart, carts) {
+    $('#foot').load('./foot.html');
     cart.render();
+
 })

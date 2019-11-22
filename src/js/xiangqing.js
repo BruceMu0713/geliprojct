@@ -60,7 +60,7 @@ define(['jquery', 'magnifier', 'cookie'], function($, magnifier, cookie) {
                     src: $(this).find('img').attr('src')
 
                 });
-                console.log($('#bpic'));
+
 
                 $('#bpic').attr({
                     src: $(this).find('img').attr('src')
@@ -73,6 +73,7 @@ define(['jquery', 'magnifier', 'cookie'], function($, magnifier, cookie) {
         },
         additem: function(id, price, title, num) {
             let shop = cookie.get('shop');
+            console.log(shop);
             let product = {
                 id: id,
                 price: price,
@@ -99,6 +100,29 @@ define(['jquery', 'magnifier', 'cookie'], function($, magnifier, cookie) {
             }
 
             cookie.set('shop', JSON.stringify(shop), 10)
+        },
+        jiajian: function() {
+            var plus = $(".btn-add");
+            var i = $("#num").val();
+            var subtract = $(".btn-reduce");
+
+            plus.on('click', function() {
+                i++;
+                $("#num").val(i)
+            });
+            subtract.on('click', function() {
+                if (i > 0) {
+                    i--;
+                    $("#num").val(i);
+
+                } else {
+                    i = 0;
+                    $("#num").val(i);
+
+                }
+            })
+
+
         }
     }
 });

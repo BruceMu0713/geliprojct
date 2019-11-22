@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/resetpc.css">
     <link rel="stylesheet" href="../sass/newregister.min.css">
+    <link rel="stylesheet" href="../sass/foot.min.css">
     <script src="../js/require.js" data-main="../js/mainnewregister"></script>
 </head>
 
@@ -53,7 +54,7 @@
                                 <li class="pr">
                                     <span class="regist_font"><i class="font_fe">*</i>请设置密码：</span>
                                     <div class="regist_item_ifo">
-                                        <input id="firstPersonalPassword" name="firstPersonalPassword" type="password" class="input_Style1 wid_260" placeholder="请输入密码" maxlength="20" onkeyup="value=value.replace(/\s/g,'')">
+                                        <input id="firstPersonalPassword" name="firstPersonalPassword" type="password" class="input_Style1 wid_260" placeholder="请输入密码" maxlength="20">
                                         <span class="register-icon fa-lock font_c7"></span>
                                         <div class="password_length" style="margin-top: 5px;">
                                             <span id="pwd_level_1" class="bg_08 font_12" style="display:none">弱</span>
@@ -69,9 +70,11 @@
                                 <li>
                                     <span class="regist_font"><i class="font_fe">*</i>请确认密码：</span>
                                     <div class="regist_item_ifo">
-                                        <input id="secondPersonalPassword" name="secondPersonalPassword" type="password" class="input_Style1 wid_260" onkeyup="value=value.replace(/\s/g,'')" placeholder="请再次输入密码" maxlength="20">
+                                        <input id="secondPersonalPassword" name="secondPersonalPassword" type="password" class="input_Style1 wid_260" maxlength="20">
                                         <span class="register-icon fa-lock font_c7"></span>
                                     </div>
+                                    <span class="yzmima" style="position: absolute;left:770px;top: 350px;"></span>
+
                                     <!-- <div id="secondPersonalPasswordDiv1" class="regist_text bg_05 border-1 none pass_two">请再次输入密码</div>
                                     <div id="secondPersonalPasswordDiv2" class="regist_text bg_05 border-1 none font_fe ">
                                         <i class="fa-exclamation-circle font_16 demo-icons"></i>两次输入密码不一致
@@ -108,6 +111,7 @@
             </div>
         </div>
     </div>
+    <div id="foot"></div>
 </body>
 
 </html>

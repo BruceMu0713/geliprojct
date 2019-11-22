@@ -81,7 +81,7 @@ define(['jquery', 'cookie', 'carts'], function($, cookie, carts) {
                                         <strong class="danjia">¥${(elm.price*arr[0].num).toFixed(2)}</strong>
                                     </li>
                                     <li class="main1_del" style="width: 100px;">
-                                        <a href="javascript:;" class="delBtn">【删除】</a>
+                                        <a href="javascript:;" class="delBtn" id=${elm.id}>【删除】</a>
     
                                     </li>
                                 </ul>

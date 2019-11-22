@@ -1,9 +1,11 @@
 require.config({
     paths: {
-        userlogin: "./userlogin",
+        jquery: "./jquery-1.11.3",
+        userlogin: "./userlogin"
     }
 });
-require(['userlogin'], function(userlogin) {
+require(['jquery', 'userlogin'], function(jquery, userlogin) {
+    $('#foot').load('./foot.html');
     userlogin.login();
 
 });

@@ -8,6 +8,47 @@
 /* 左侧商品 */
 /* 右侧购物车信息框 */
 /* 导航菜单 */
+img:hover {
+  opacity: 0.8;
+}
+
+.Nav_classify .classify_list1.show {
+  display: block;
+}
+
+#leftBar {
+  position: fixed;
+  display: none;
+  width: 60px;
+  text-align: center;
+  top: 60%;
+  line-height: 28px;
+  right: 15px;
+  z-index: 999;
+  background-color: white;
+  margin-left: 607px;
+}
+
+#leftBar a {
+  display: block;
+  border: 1px solid #dedede;
+  line-height: 34px;
+  color: #ed5759;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+#leftBar a .floor_h {
+  display: none;
+}
+
+#leftBar .current a {
+  border: 1px solid #ed5759;
+  line-height: 34px;
+  color: #ed5759;
+  background-color: #fdeeee;
+}
+
 .navmenu {
   border: 0px;
   width: 100%;
@@ -145,7 +186,7 @@
   left: 174px;
   top: 0px;
   z-index: 999;
-  /* display: none; */
+  display: none;
   box-shadow: 6px 3px 8px 0 rgba(195, 183, 183, 0.28);
 }
 
@@ -155,6 +196,14 @@
   min-height: 450px;
   padding: 28px 80px 28px 0;
   box-sizing: border-box;
+}
+
+.Nav_classify .classify_list1.hide {
+  display: none;
+}
+
+.Nav_classify .classify_list1.show {
+  display: block;
 }
 
 /* 右侧显示信息 */
@@ -347,6 +396,10 @@
   width: 15px;
   height: 16px;
   background-repeat: no-repeat;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 #header {

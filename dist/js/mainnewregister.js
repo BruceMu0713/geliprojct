@@ -1,0 +1,1 @@
+"use strict";require.config({paths:{jquery:"./jquery-1.11.3",newregister:"./newregister"}}),require(["jquery","newregister"],function(e,r){$("#foot").load("./foot.html"),r.register()});

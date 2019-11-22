@@ -1,4 +1,4 @@
-define(['jquery'], function() {
+define(['jquery', 'cookie'], function($, cookie) {
     return {
         carts: function() {
             var $allCheckbox = $('input[type="checkbox"]'), //全局的全部checkbox
@@ -181,12 +181,19 @@ define(['jquery'], function() {
             });
             //确定按钮，移除商品
             $('.dialog-sure').click(function() {
+
+                let shop = cookie.get('shop');
+                shop = JSON.parse(shop);
+                // console.log(shop);
+
+                cookie.remove();
+
                 $order_lists.remove();
                 if ($order_content.html().trim() == null || $order_content.html().trim().length == 0) {
                     $order_content.parents('.mainshopbox').remove();
                 }
                 closeM();
-                $sonCheckBox = $('.probtn');
+                // $sonCheckBox = $('.probtn');
                 totalMoney();
             })
 

@@ -7,9 +7,12 @@ require.config({
     }
 });
 require(['xiangqing', 'magnifier'], function(xiangqing, magnifier) {
+    xiangqing.jiajian();
     xiangqing.render(function(id, price, title) {
+
         $('.addCart').on('click', function() {
-            xiangqing.additem(id, price, title, $('#num').val())
+            xiangqing.additem(id, price, title, $('#num').val());
+
         })
     });
 

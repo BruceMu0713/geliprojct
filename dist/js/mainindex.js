@@ -1,0 +1,1 @@
+"use strict";require.config({paths:{jquery:"./jquery-1.11.3",lunbo:"./lunbo",index:"./index",tab:"./tab",louti:"./louti",lazyload:"./jquery.lazyload"},shim:{}}),require(["jquery","lunbo","index","tab","louti","lazyload"],function(l,e,i,a,u,o){l("#slider").Slider(),i.render(),i.login1(),l(".Nav_classify").tabs(),u.louti(),l("img.lazy").lazyload({effect:"fadeIn"})});

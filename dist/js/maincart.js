@@ -1,0 +1,1 @@
+"use strict";require.config({paths:{jquery:"./jquery-1.11.3",cookie:"./cookie",cart:"./cart",carts:"./carts"}}),require(["jquery","cart","carts"],function(r,t,e){r("#foot").load("./foot.html"),t.render()});

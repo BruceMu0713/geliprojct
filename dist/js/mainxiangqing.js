@@ -1,0 +1,1 @@
+"use strict";require.config({paths:{jquery:"./jquery-1.11.3",xiangqing:"./xiangqing",magnifier:"./magnifier",cookie:"./cookie"}}),require(["xiangqing","magnifier"],function(a,i){a.jiajian(),a.render(function(i,n,e){$(".addCart").on("click",function(){a.additem(i,n,e,$("#num").val())})})});

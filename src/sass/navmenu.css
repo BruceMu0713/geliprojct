@@ -136,7 +136,7 @@
   left: 174px;
   top: 0px;
   z-index: 999;
-  /* display: none; */
+  display: none;
   box-shadow: 6px 3px 8px 0 rgba(195, 183, 183, 0.28);
 }
 
@@ -146,4 +146,12 @@
   min-height: 450px;
   padding: 28px 80px 28px 0;
   box-sizing: border-box;
+}
+
+.Nav_classify > ul > li.actived {
+  background-color: greenyellow;
+}
+
+.Nav_classify .classify_list1.show {
+  display: block;
 }
