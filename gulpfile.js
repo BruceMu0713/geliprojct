@@ -20,11 +20,15 @@ const plugins = require('gulp-load-plugins')(); //生成.map文件
 //gulp.parallel() –并行运行任务 
 
 //0.复制文件
-// gulp.task('copyfile', function () {
-//     return gulp.src('src/font/*')
-//         .pipe(gulp.dest('dist/font/'));
-// });
-
+gulp.task('copyfile', function() {
+    return gulp.src('src/iconfont/*')
+        .pipe(gulp.dest('dist/iconfont/'));
+});
+//复制php
+gulp.task('copyphp', function() {
+    return gulp.src('src/php/lib/*')
+        .pipe(gulp.dest('dist/lib/'));
+});
 //1.压缩html文件
 gulp.task('uglifyhtml', function() {
     return gulp.src('src/html/*.html')
@@ -82,6 +86,6 @@ gulp.task('runimg', function() {
 
 //最终监听
 //每一个任务先跑一次，再进行监听
-// gulp.task('default',function(){
-//     watch(['src/font/*','src/*.html','src/sass/*.scss','src/script/*.js','src/img/*.{png,jpg,gif,ico}'],gulp.parallel('copyfile','uglifyhtml','compilesass','babel','runimg'));
-// });
+gulp.task('default', function() {
+    watch(['src/iconfont/*', 'src/html/*.html', 'src/sass/*.scss', 'src/js/*.js', 'src/img/*.{png,jpg,gif,ico}'], gulp.parallel('copyfile', 'uglifyhtml', 'compilesass', 'babel', 'runimg'));
+});
